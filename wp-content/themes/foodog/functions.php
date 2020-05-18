@@ -34,6 +34,7 @@ function foodog_register_assets()
     //on ajout à la queue de chargement des scripts
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
+    wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
 
 //changer le séparateur du titre du site (voir titre onglet)
@@ -75,10 +76,11 @@ function foodog_pagination()
     global $pagination_link_class;
     global $pagination_li_class;
     echo '<ul class="' . $pagination_ul_class . '">';
-    $pages = paginate_links(['type' => 'array', 'prev_text' => '&laquo;', 'next_text' => '&raquo;']);
+    $pages = paginate_links(['type' => 'array', 'prev_text' => '<', 'next_text' => '>']);
     if($pages != null){
     foreach ($pages as $page) {
-        echo '<li class="'.$pagination_li_class.'">';
+        $class = strpos($page,'aria-current') !== false ? ' foodog-pagination-current' : '';
+        echo '<li class="'.$pagination_li_class.$class.'">';
         echo str_replace('page-numbers',$pagination_link_class,$page);
         echo '</li>';
     }

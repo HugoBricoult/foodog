@@ -3,11 +3,96 @@ Theme Name: Foodog
 Author: the Becode team
 Version: 0.1
 */
-.foodog-pagination li .foodog-pagination-link {
-  color: black;
+.foodog-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  font-size: 12px;
 }
 
-.foodog-menu .foodog-menu-link {
+.foodog-pagination li {
   color: black;
+  list-style-type: none;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 0px 5px;
+}
+
+.foodog-pagination li .foodog-pagination-link {
+  display: block;
+  color: gray;
+  text-decoration: none;
+  -webkit-transform: translateX(3px) translateY(-3px);
+          transform: translateX(3px) translateY(-3px);
+}
+
+.foodog-pagination li .dots {
+  -webkit-transform: translateY(-6px) translateX(2px);
+          transform: translateY(-6px) translateX(2px);
+}
+
+.foodog-pagination .foodog-pagination-current {
+  background-color: #3a3e43;
+  border: 1px solid #3a3e43;
+}
+
+.foodog-pagination .foodog-pagination-current span {
+  color: white;
+}
+
+.foodog-menu-categorie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.foodog-menu-categorie .foodog-menu {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.foodog-menu-categorie .foodog-menu .foodog-menu-link {
+  color: black;
+  text-decoration: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+
+.foodog-menu-categorie .foodog-menu .foodog-menu-link:hover {
+  border-bottom: 2px solid black;
+}
+
+.foodog-header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.foodog-separation {
+  width: 80%;
+  margin-top: 0;
+  padding-top: 0;
 }
 /*# sourceMappingURL=style.css.map */
