@@ -18,6 +18,7 @@ function foodog_support()
     add_theme_support('menus');
     register_nav_menu('header', 'En tête du menu');
     register_nav_menu('footer', 'Pied de page');
+    register_nav_menu('reseaux','Menu En tête reseaux');
 }
 
 //ajout bootstrap (css et script js (+dépendance popper et jquery))

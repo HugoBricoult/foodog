@@ -80,6 +80,66 @@ Version: 0.1
   border-bottom: 2px solid black;
 }
 
+.foodog-menu-reseaux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-right: 1px solid gray;
+  padding-right: 10px;
+}
+
+.foodog-menu-reseaux li {
+  list-style-type: none;
+  padding-right: 6px;
+  padding-left: 6px;
+  color: #3a3e43;
+}
+
+.foodog-menu-reseaux li a {
+  color: #3a3e43;
+  text-decoration: none;
+}
+
+.foodog-menu-reseaux li a:hover {
+  color: #7b7d80;
+}
+
+.foodog-menu-reseaux-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: gray;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.foodog-search {
+  border: none;
+  border-radius: 0;
+  width: 0;
+  padding: 0;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.foodog-search-button:hover > .foodog-search {
+  width: 150px;
+  border: 1px solid gray;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+
 .foodog-header-title {
   display: -webkit-box;
   display: -ms-flexbox;

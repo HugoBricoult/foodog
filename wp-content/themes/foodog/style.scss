@@ -62,6 +62,53 @@ Version: 0.1
     }
 }
 
+.foodog-menu-reseaux{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    li{
+        list-style-type: none;
+        padding-right: 6px;
+        padding-left: 6px;
+        color: #3a3e43;
+        a{
+            color: #3a3e43;
+            text-decoration: none;
+            &:hover{
+                color: #7b7d80;
+            }
+        }
+        
+    }
+    border-right: 1px solid gray;
+    padding-right: 10px;
+}
+
+.foodog-menu-reseaux-all{
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    justify-content: flex-end;
+}
+
+.foodog-search{
+    border: none;
+    border-radius: 0;
+    width: 0;
+    padding: 0;
+    transition: width 0.3s ;
+}
+
+.foodog-search-button{
+    &:hover > .foodog-search{
+        width: 150px;
+        border: 1px solid gray;
+        padding: 0px 10px;
+        border-radius: 5px;
+    }
+}
+
 .foodog-header-title{
     display: flex;
     flex-direction: column;
