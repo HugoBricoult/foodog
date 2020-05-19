@@ -89,6 +89,10 @@ function foodog_pagination()
     echo '</ul>';
 }
 
+function foodog_ad(){
+    
+}
+
 
 //add_action=>
 //1er paramètre : évenement
