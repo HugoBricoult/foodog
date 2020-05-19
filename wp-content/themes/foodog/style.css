@@ -80,6 +80,29 @@ Version: 0.1
   border-bottom: 2px solid black;
 }
 
+.foodog-btn-top {
+  display: block;
+  position: fixed;
+  top: 50vh;
+  right: 30px;
+  color: lightgray;
+  background-color: gray;
+  width: 21px;
+  height: 21px;
+  font-size: 20px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.foodog-btn-top i {
+  -webkit-transform: translate(4px, -1px);
+          transform: translate(4px, -1px);
+}
+
+.foodog-btn-top:hover {
+  color: white;
+}
+
 .foodog-menu-reseaux {
   display: -webkit-box;
   display: -ms-flexbox;

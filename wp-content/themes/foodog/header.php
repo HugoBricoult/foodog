@@ -6,7 +6,7 @@
     <?php wp_head() ?>
 </head>
 <body>
-    <div class="foodog-header">
+    <div class="foodog-header" id="header-foodog">
         <div class="row">
             <div class="col-4">
 
@@ -32,7 +32,7 @@
     
     
     <!-- formulaire de rechercher se trouve dans searchform.php -->
-
+    <a href="#header-foodog" class="foodog-btn-top"><i class="fas fa-sort-up"></i></a>
     </div>
     <div class="container">
         <div class="row">

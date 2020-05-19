@@ -62,6 +62,26 @@ Version: 0.1
     }
 }
 
+.foodog-btn-top{
+    display: block;
+    position: fixed;
+    top: 50vh;
+    right: 30px;
+    color: lightgray;
+    background-color: gray;
+    width: 21px;
+    height: 21px;
+    font-size: 20px;
+    border-radius: 2px;
+    text-decoration: none;
+    i{
+        transform: translate(4px, -1px);
+    }
+    &:hover{
+        color: white;
+    }
+}
+
 .foodog-menu-reseaux{
     display: flex;
     flex-direction: row;
