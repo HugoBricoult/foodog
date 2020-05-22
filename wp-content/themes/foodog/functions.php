@@ -21,6 +21,7 @@ function foodog_support()
     register_nav_menu('reseaux','Menu En tête reseaux');
 }
 
+
 //ajout bootstrap (css et script js (+dépendance popper et jquery))
 function foodog_register_assets()
 {
@@ -89,8 +90,14 @@ function foodog_pagination()
     echo '</ul>';
 }
 
-function foodog_ad(){
-    
+//modifier la longeur du exerpt (resumé article)
+function foodog_custom_excerpt_length( $length ) {
+    return 15;
+}
+
+//modifier le [...] apreès le exerpt (résumé text)
+function foodog_excerpt_more( $more ) {
+    return '';
 }
 
 
@@ -100,7 +107,6 @@ function foodog_ad(){
 //=> on ajoute une action
 add_action('after_setup_theme', 'foodog_support');
 add_action('wp_enqueue_scripts', 'foodog_register_assets');
-
 //add_filter =>
 //1er paramètre : valeur se trouvant dans wordpress
 //2eme paramètre : fonction qui modifie cette valeur
@@ -109,3 +115,5 @@ add_action('wp_enqueue_scripts', 'foodog_register_assets');
 add_filter('document_title_parts', 'foodog_document_title_parts'); */
 add_filter('nav_menu_css_class', 'foodog_menu_class');
 add_filter('nav_menu_link_attributes', 'foodog_menu_link_class');
+add_filter( 'excerpt_length', 'foodog_custom_excerpt_length', 999 );
+add_filter( 'excerpt_more', 'foodog_excerpt_more' );

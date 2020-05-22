@@ -3,6 +3,10 @@ Theme Name: Foodog
 Author: the Becode team
 Version: 0.1
 */
+.foodog-body {
+  width: 60%;
+}
+
 .foodog-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,6 +82,12 @@ Version: 0.1
 
 .foodog-menu-categorie .foodog-menu .foodog-menu-link:hover {
   border-bottom: 2px solid black;
+}
+
+.foodog-home-page {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .foodog-btn-top {
@@ -167,5 +177,221 @@ Version: 0.1
   width: 80%;
   margin-top: 0;
   padding-top: 0;
+}
+
+.foodog-home-first-card {
+  width: 100%;
+  padding: 0px 5px;
+}
+
+.foodog-home-first-card img {
+  width: 100%;
+  height: auto;
+}
+
+.foodog-home-first-card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foodog-home-first-card ul li {
+  list-style-type: none;
+  padding: 0px 5px;
+}
+
+.foodog-home-first-card ul li a {
+  text-decoration: none;
+  color: #ff9473;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.foodog-home-first-card h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: -10px;
+}
+
+.foodog-home-second-card {
+  width: 100%;
+  padding: 0px 5px;
+}
+
+.foodog-home-second-card img {
+  width: 100%;
+  height: auto;
+}
+
+.foodog-home-second-card h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  height: 50px;
+}
+
+.foodog-home-subtitle-parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px 0px;
+}
+
+.foodog-home-subtitle-parts p {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.foodog-home-subtitle-parts hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto 20px;
+}
+
+.foodog-home-featured-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.foodog-home-featured-card img {
+  width: 100%;
+}
+
+.foodog-home-featured-card-desc {
+  width: 100%;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.foodog-home-featured-card-desc ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.foodog-home-featured-card-desc ul li {
+  list-style-type: none;
+  padding: 0;
+  padding-right: 10px;
+}
+
+.foodog-home-featured-card-desc ul li a {
+  text-decoration: none;
+  color: #ff9473;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.foodog-home-featured-card-desc h2 {
+  width: 100%;
+  font-size: 1rem;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.foodog-home-featured-card-desc p {
+  font-size: 12px;
+}
+
+.foodog-home-featured-card-desc button {
+  background-color: white;
+  border: none;
+  width: 90px;
+  padding: 0;
+  text-align: start;
+}
+
+.foodog-home-featured-card-desc button i {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.foodog-home-lastest-card {
+  width: 100%;
+  padding: 0px 5px;
+}
+
+.foodog-home-lastest-card img {
+  width: 100%;
+}
+
+.foodog-home-lastest-card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foodog-home-lastest-card ul li {
+  list-style-type: none;
+  padding: 0;
+  padding-right: 10px;
+}
+
+.foodog-home-lastest-card ul li a {
+  text-decoration: none;
+  color: #ff9473;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.foodog-home-lastest-card h2 {
+  width: 100%;
+  font-size: 1rem;
+  margin: 0;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.foodog-home-lastest-card p {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 5px;
 }
 /*# sourceMappingURL=style.css.map */

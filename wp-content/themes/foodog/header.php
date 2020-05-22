@@ -34,6 +34,4 @@
     <!-- formulaire de rechercher se trouve dans searchform.php -->
     <a href="#header-foodog" class="foodog-btn-top"><i class="fas fa-sort-up"></i></a>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-9">
+    <div class="container foodog-body">
