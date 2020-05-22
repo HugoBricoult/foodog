@@ -1,4 +1,18 @@
 <?php
+//SECTION DU FICHIER FUNCTION.php
+// - PARAMETRE
+// - SUPPORTS
+// - REGISTER CSS/JS
+// - MENU
+// - PAGINATION
+// - EXERPTS (résumé contenu)
+// - METADONEES (nombre de vues)
+// - ACTIONS
+// - FILTER
+
+
+
+//PARAMETRES///////////////////////////////
 //paramètres définir class
 $pagination_ul_class = "foodog-pagination";
 $pagination_link_class = "foodog-pagination-link";
@@ -6,7 +20,9 @@ $pagination_li_class = "foodog-pagination-li";
 $foodog_menu_link_class = "foodog-menu-link";
 $foodog_menu_class = "foodog-menu";
 
-//SUPPORTS
+
+
+//SUPPORTS///////////////////////////////
 //ajout mise à jour auto titre 
 //ajout support image article
 //ajout support menu(emplacement menu /.php/, description)
@@ -22,6 +38,8 @@ function foodog_support()
 }
 
 
+
+//REGISTER CSS/JS///////////////////////////////
 //ajout bootstrap (css et script js (+dépendance popper et jquery))
 function foodog_register_assets()
 {
@@ -39,22 +57,9 @@ function foodog_register_assets()
     wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
 
-//changer le séparateur du titre du site (voir titre onglet)
-/* function foodog_title_separator($title)
-{
-    return '|';
-} */
-
-//retirer la 2eme partie du titre (voir titre onglet)
-/* function foodog_document_title_parts($title)
-{
-    unset($title['tagline']);
-    return $title;
-    //ajouter une partie 
-    //$title['exemple'] = 'nouvelle partie'
-} */
 
 
+//MENU///////////////////////////////
 //ajoute un class au li du menu
 function foodog_menu_class($classes)
 {
@@ -71,6 +76,9 @@ function foodog_menu_link_class($attrs)
     return $attrs;
 }
 
+
+
+//PAGINATION///////////////////////////////
 //création pagination
 function foodog_pagination()
 {
@@ -90,6 +98,9 @@ function foodog_pagination()
     echo '</ul>';
 }
 
+
+
+//EXERPTS///////////////////////////////
 //modifier la longeur du exerpt (resumé article)
 function foodog_custom_excerpt_length( $length ) {
     return 15;
@@ -101,12 +112,45 @@ function foodog_excerpt_more( $more ) {
 }
 
 
+//METADONEES///////////////////////////////
+function foodog_get_post_view() {
+    $count = get_post_meta( get_the_ID(), 'post_views_count', true );
+    return "$count views";
+}
+function foodog_set_post_view() {
+    $key = 'post_views_count';
+    $post_id = get_the_ID();
+    $count = (int) get_post_meta( $post_id, $key, true );
+    $count++;
+    update_post_meta( $post_id, $key, $count );
+}
+function foodog_posts_column_views( $columns ) {
+    $columns['post_views'] = 'Views';
+    return $columns;
+}
+function foodog_posts_custom_column_views( $column ) {
+    if ( $column === 'post_views') {
+        echo foodog_get_post_view();
+    }
+}
+
+
+
+
+
+
+//ACTIONS///////////////////////////////
 //add_action=>
 //1er paramètre : évenement
 //2eme paramètre : fonction à ajouter
 //=> on ajoute une action
 add_action('after_setup_theme', 'foodog_support');
 add_action('wp_enqueue_scripts', 'foodog_register_assets');
+add_action( 'manage_posts_custom_column', 'foodog_posts_custom_column_views' );
+
+
+
+//FILTER///////////////////////////////
 //add_filter =>
 //1er paramètre : valeur se trouvant dans wordpress
 //2eme paramètre : fonction qui modifie cette valeur
@@ -117,3 +161,4 @@ add_filter('nav_menu_css_class', 'foodog_menu_class');
 add_filter('nav_menu_link_attributes', 'foodog_menu_link_class');
 add_filter( 'excerpt_length', 'foodog_custom_excerpt_length', 999 );
 add_filter( 'excerpt_more', 'foodog_excerpt_more' );
+add_filter( 'manage_posts_columns', 'foodog_posts_column_views' );

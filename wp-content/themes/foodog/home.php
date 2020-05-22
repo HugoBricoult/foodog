@@ -46,28 +46,40 @@ if (have_posts()) { ?>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-8">
                 <!-- Featured posts -->
                 <div class="foodog-home-subtitle-parts">
                     <p>Featured Posts<p>
                     <hr>
                 </div>
-                <?php for($i = 0; $i < 3; $i++){
-                    if(have_posts()){
-                        the_post(); ?>
+                <?php 
+                    $args = array(
+                        'post_status' => 'publish',
+                    'post_type' => 'post',
+                    'meta_key' => 'post_views_count',
+                    'orderby' => 'meta_value_num',
+                    'order' => 'DESC',
+                    'posts_per_page' => 3
+                    );
+                    $postsmostviewed = get_posts($args); 
+                    
+                    
+                ?>
+                <?php for($i = 0; $i < sizeof($postsmostviewed); $i++){?>
+                        
                         <div class="foodog-home-featured-card">
-                            <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="<?php the_post_thumbnail_caption() ?>"></a>
+                            <a href="<?= get_the_permalink($postsmostviewed[$i]->ID) ?>"><img src="<?= get_the_post_thumbnail_url($postsmostviewed[$i]->ID) ?>" alt="<?php the_post_thumbnail_caption() ?>"></a>
                             <div class="foodog-home-featured-card-desc">
-                                <?php the_category() ?>
-                                <h2><?php the_title() ?> </h2>
-                                <p><?php the_excerpt() ?></p>
+                                <?= get_the_category_list('','',$postsmostviewed[$i]->ID) ?>
+                                <h2><?= $postsmostviewed[$i]->post_title ?> </h2>
+                                <p><?= get_the_excerpt($postsmostviewed[$i]->ID) ?></p>
                                 <button><i class="fas fa-share"></i> Share</button>
                             </div>
                         </div>
-                <?php   if($i != 2){ ?>
+                <?php   if($i != (sizeof($postsmostviewed)-1)){ ?>
                         <hr>
                 <?php   } 
-                    }
+                    
                 } ?>
 
                 <div class="foodog-home-subtitle-parts">
@@ -88,11 +100,12 @@ if (have_posts()) { ?>
                     }?>
                 </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-4">
                 <!-- right add -->
                 <?php include('advertising.php'); ?>
         </div>
     </div>
+    
     <?php foodog_pagination() ?>
     <!-- paginate_links(['prev_text'=>'&laquo;','next_text'=>'&raquo;']) -->
     
