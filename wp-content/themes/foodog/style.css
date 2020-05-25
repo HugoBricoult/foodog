@@ -10,4 +10,12 @@ Version: 0.1
 .foodog-menu .foodog-menu-link {
   color: black;
 }
+
+.foodog-footericon {
+  background-color: blue;
+}
+
+.foodog-footer-row {
+  padding: 0;
+}
 /*# sourceMappingURL=style.css.map */

@@ -20,6 +20,43 @@ function foodog_support()
     register_nav_menu('footer', 'Pied de page');
 }
 
+function foodog_widgets_init()
+{
+
+    register_sidebar(array(
+        'name'          => 'First Footer',
+        'id'            => 'first_footer',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ));
+    register_sidebar(array(
+        'name'          => 'Second Footer',
+        'id'            => 'second_footer',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ));
+    register_sidebar(array(
+        'name'          => 'Third Footer',
+        'id'            => 'third_footer',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ));
+    register_sidebar(array(
+        'name'          => 'Fourth Footer',
+        'id'            => 'fourth_footer',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ));
+}
+
 //ajout bootstrap (css et script js (+dépendance popper et jquery))
 function foodog_register_assets()
 {
@@ -34,6 +71,7 @@ function foodog_register_assets()
     //on ajout à la queue de chargement des scripts
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
+    wp_enqueue_style('style', get_stylesheet_uri());
 }
 
 //changer le séparateur du titre du site (voir titre onglet)
@@ -76,12 +114,12 @@ function foodog_pagination()
     global $pagination_li_class;
     echo '<ul class="' . $pagination_ul_class . '">';
     $pages = paginate_links(['type' => 'array', 'prev_text' => '&laquo;', 'next_text' => '&raquo;']);
-    if($pages != null){
-    foreach ($pages as $page) {
-        echo '<li class="'.$pagination_li_class.'">';
-        echo str_replace('page-numbers',$pagination_link_class,$page);
-        echo '</li>';
-    }
+    if ($pages != null) {
+        foreach ($pages as $page) {
+            echo '<li class="' . $pagination_li_class . '">';
+            echo str_replace('page-numbers', $pagination_link_class, $page);
+            echo '</li>';
+        }
     }
     echo '</ul>';
 }
@@ -93,6 +131,7 @@ function foodog_pagination()
 //=> on ajoute une action
 add_action('after_setup_theme', 'foodog_support');
 add_action('wp_enqueue_scripts', 'foodog_register_assets');
+add_action('widgets_init', 'foodog_widgets_init');
 
 //add_filter =>
 //1er paramètre : valeur se trouvant dans wordpress

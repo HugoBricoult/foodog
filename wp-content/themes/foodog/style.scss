@@ -3,16 +3,24 @@ Theme Name: Foodog
 Author: the Becode team
 Version: 0.1
 */
-.foodog-pagination{
-    li{
-        .foodog-pagination-link{
-            color: black;
-        }
+.foodog-pagination {
+  li {
+    .foodog-pagination-link {
+      color: black;
     }
+  }
 }
 
-.foodog-menu{
-    .foodog-menu-link{
-        color: black;
-    }
+.foodog-menu {
+  .foodog-menu-link {
+    color: black;
+  }
+}
+
+.foodog-footericon {
+  background-color: blue;
+}
+
+.foodog-footer-row {
+  padding: 0;
 }
