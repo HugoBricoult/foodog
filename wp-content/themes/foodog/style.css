@@ -395,4 +395,138 @@ Version: 0.1
   text-align: center;
   padding-bottom: 5px;
 }
+
+.foodog-advertising {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.foodog-advertising img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.foodog-advertising button {
+  display: block;
+  position: absolute;
+  background-color: #ff8d6a;
+  border: none;
+  width: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  right: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(232px);
+          transform: translateX(-50%) translateY(232px);
+}
+
+.foodog-advertising-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.foodog-advertising-social div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 8px;
+  color: white;
+  border: 2px solid white;
+}
+
+.foodog-advertising-social div button {
+  margin-left: auto;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.foodog-advertising-social div i {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.foodog-advertising-social div span {
+  font-size: 12px;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.foodog-advertising-social .foodog-facebook {
+  background-color: #899dce;
+}
+
+.foodog-advertising-social .foodog-twitter {
+  background-color: #60d2f5;
+}
+
+.foodog-advertising-social .foodog-instagram {
+  background-color: #709cbf;
+}
+
+.foodog-advertising-social-single-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.foodog-advertising-social-single-page div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.foodog-advertising-social-single-page div i {
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: #4d4d4d;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.foodog-advertising-social-single-page h2 {
+  color: gray;
+  font-size: 13px;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */

@@ -34,7 +34,7 @@ function foodog_support()
     add_theme_support('menus');
     register_nav_menu('header', 'En tête du menu');
     register_nav_menu('footer', 'Pied de page');
-    register_nav_menu('reseaux','Menu En tête reseaux');
+    register_nav_menu('reseaux', 'Menu En tête reseaux');
 }
 
 
@@ -54,7 +54,7 @@ function foodog_register_assets()
     //on ajout à la queue de chargement des scripts
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
-    wp_enqueue_style( 'style', get_stylesheet_uri() );
+    wp_enqueue_style('style', get_stylesheet_uri());
 }
 
 
@@ -87,13 +87,13 @@ function foodog_pagination()
     global $pagination_li_class;
     echo '<ul class="' . $pagination_ul_class . '">';
     $pages = paginate_links(['type' => 'array', 'prev_text' => '<', 'next_text' => '>']);
-    if($pages != null){
-    foreach ($pages as $page) {
-        $class = strpos($page,'aria-current') !== false ? ' foodog-pagination-current' : '';
-        echo '<li class="'.$pagination_li_class.$class.'">';
-        echo str_replace('page-numbers',$pagination_link_class,$page);
-        echo '</li>';
-    }
+    if ($pages != null) {
+        foreach ($pages as $page) {
+            $class = strpos($page, 'aria-current') !== false ? ' foodog-pagination-current' : '';
+            echo '<li class="' . $pagination_li_class . $class . '">';
+            echo str_replace('page-numbers', $pagination_link_class, $page);
+            echo '</li>';
+        }
     }
     echo '</ul>';
 }
@@ -102,40 +102,43 @@ function foodog_pagination()
 
 //EXERPTS///////////////////////////////
 //modifier la longeur du exerpt (resumé article)
-function foodog_custom_excerpt_length( $length ) {
+function foodog_custom_excerpt_length($length)
+{
     return 15;
 }
 
 //modifier le [...] apreès le exerpt (résumé text)
-function foodog_excerpt_more( $more ) {
+function foodog_excerpt_more($more)
+{
     return '';
 }
 
 
 //METADONEES///////////////////////////////
-function foodog_get_post_view() {
-    $count = get_post_meta( get_the_ID(), 'post_views_count', true );
-    return "$count views";
+function foodog_get_post_view()
+{
+    $count = get_post_meta(get_the_ID(), 'post_views_count', true);
+    return "$count vues";
 }
-function foodog_set_post_view() {
+function foodog_set_post_view()
+{
     $key = 'post_views_count';
     $post_id = get_the_ID();
-    $count = (int) get_post_meta( $post_id, $key, true );
+    $count = (int) get_post_meta($post_id, $key, true);
     $count++;
-    update_post_meta( $post_id, $key, $count );
+    update_post_meta($post_id, $key, $count);
 }
-function foodog_posts_column_views( $columns ) {
-    $columns['post_views'] = 'Views';
+function foodog_posts_column_views($columns)
+{
+    $columns['post_views'] = 'Vues';
     return $columns;
 }
-function foodog_posts_custom_column_views( $column ) {
-    if ( $column === 'post_views') {
+function foodog_posts_custom_column_views($column)
+{
+    if ($column === 'post_views') {
         echo foodog_get_post_view();
     }
 }
-
-
-
 
 
 
@@ -146,7 +149,7 @@ function foodog_posts_custom_column_views( $column ) {
 //=> on ajoute une action
 add_action('after_setup_theme', 'foodog_support');
 add_action('wp_enqueue_scripts', 'foodog_register_assets');
-add_action( 'manage_posts_custom_column', 'foodog_posts_custom_column_views' );
+add_action('manage_posts_custom_column', 'foodog_posts_custom_column_views');
 
 
 
@@ -159,6 +162,6 @@ add_action( 'manage_posts_custom_column', 'foodog_posts_custom_column_views' );
 add_filter('document_title_parts', 'foodog_document_title_parts'); */
 add_filter('nav_menu_css_class', 'foodog_menu_class');
 add_filter('nav_menu_link_attributes', 'foodog_menu_link_class');
-add_filter( 'excerpt_length', 'foodog_custom_excerpt_length', 999 );
-add_filter( 'excerpt_more', 'foodog_excerpt_more' );
-add_filter( 'manage_posts_columns', 'foodog_posts_column_views' );
+add_filter('excerpt_length', 'foodog_custom_excerpt_length', 999);
+add_filter('excerpt_more', 'foodog_excerpt_more');
+add_filter('manage_posts_columns', 'foodog_posts_column_views');
