@@ -14,6 +14,8 @@ Version: 0.1
 .foodog-footericon a {
   background-color: #424242;
   border-radius: 50%;
+  padding: 0;
+  padding-top: 7px;
 }
 
 .foodog-footericon button {
