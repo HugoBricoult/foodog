@@ -12,7 +12,7 @@ Version: 0.1
 }
 
 .foodog-footericon a {
-  background-color: #292929;
+  background-color: #424242;
   border-radius: 50%;
 }
 
@@ -24,6 +24,7 @@ Version: 0.1
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #5555eb;
 }
 
 .footer-fourth {

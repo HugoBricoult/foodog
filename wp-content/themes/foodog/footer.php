@@ -27,10 +27,10 @@
             </div>
             <div class="footer-fourth text-white text-center text-top pb-5 pt-3">
                 <div class="foodog-footericon pl-4">
-                    <a class="btn-floating btn-lg btn-fb mr-2 offset-6 bg-secondary" type="button" role="button"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-floating btn-lg btn-fb mr-2 offset-6 " type="button" role="button"><i class="fab fa-facebook-f"></i></a>
 
-                    <a class="btn-floating btn-lg btn-tw mr-1 bg-secondary " type="button" role="button"><i class="fab fa-twitter"></i></a>
-                    <a class="btn-floating btn-lg btn-ins mr-1 bg-secondary" type="button" role="button"><i class="fab fa-instagram"></i></a>
+                    <a class="btn-floating btn-lg btn-tw mr-1  " type="button" role="button"><i class="fab fa-twitter"></i></a>
+                    <a class="btn-floating btn-lg btn-ins mr-1 " type="button" role="button"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </footer>
