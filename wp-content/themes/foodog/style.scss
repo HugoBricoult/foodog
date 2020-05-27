@@ -18,9 +18,66 @@ Version: 0.1
 }
 
 .foodog-footericon {
-  background-color: blue;
+  a {
+    background-color: rgb(41, 41, 41);
+    border-radius: 50%;
+  }
+  button {
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
+.footer-fourth {
+  background-color: #29292c;
+  a {
+    width: 45px;
+    height: 45px;
+    i {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.footer-third {
+  padding-right: 15px;
+  padding-top: 25px;
+}
+.footer-first {
+  padding-top: 25px;
+  a {
+    padding-top: 20px;
+  }
+}
+.footer-second {
+  padding-top: 25px;
+}
 .foodog-footer-row {
-  padding: 0;
+  background-color: #39393f;
+  text-decoration: none;
+  color: rgb(167, 167, 167);
+  padding-top: 40px;
+  padding-bottom: 35px;
+
+  h2 {
+    font-size: large;
+    font-weight: bold;
+  }
+
+  li {
+    list-style: none;
+    padding-top: 55px;
+    font-weight: bold;
+    font-size: medium;
+    a {
+      color: white;
+      padding-top: 25px;
+    }
+    .foodog-menu-link {
+      color: white;
+      list-style: none;
+      white-space: pre-line;
+    }
+  }
 }

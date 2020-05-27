@@ -11,11 +11,80 @@ Version: 0.1
   color: black;
 }
 
-.foodog-footericon {
-  background-color: blue;
+.foodog-footericon a {
+  background-color: #292929;
+  border-radius: 50%;
+}
+
+.foodog-footericon button {
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-fourth {
+  background-color: #29292c;
+}
+
+.footer-fourth a {
+  width: 45px;
+  height: 45px;
+}
+
+.footer-fourth a i {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-third {
+  padding-right: 15px;
+  padding-top: 25px;
+}
+
+.footer-first {
+  padding-top: 25px;
+}
+
+.footer-first a {
+  padding-top: 20px;
+}
+
+.footer-second {
+  padding-top: 25px;
 }
 
 .foodog-footer-row {
-  padding: 0;
+  background-color: #39393f;
+  text-decoration: none;
+  color: #a7a7a7;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+.foodog-footer-row h2 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.foodog-footer-row li {
+  list-style: none;
+  padding-top: 55px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.foodog-footer-row li a {
+  color: white;
+  padding-top: 25px;
+}
+
+.foodog-footer-row li .foodog-menu-link {
+  color: white;
+  list-style: none;
+  white-space: pre-line;
 }
 /*# sourceMappingURL=style.css.map */
