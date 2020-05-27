@@ -1,5 +1,7 @@
-<?php get_header() ?>
 
+<?php get_header() ?>
+<?php include('navbar.php'); ?>
+    <div class="container foodog-body">
 <?php
 //regarde si on as des articles
 
@@ -118,7 +120,7 @@ if (have_posts()) { ?>
         <div class="col-md-4">
 
             <!-- right add -->
-            <?php include('social.php') ?>
+            <?php include('social-single.php') ?>
             <?php include('advertising.php'); ?>
         </div>
     </div>

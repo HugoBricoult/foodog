@@ -43,6 +43,10 @@ function foodog_support()
 //ajout bootstrap (css et script js (+dépendance popper et jquery))
 function foodog_register_assets()
 {
+    //crimson text
+    wp_register_style('crimson','https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+    //open sans
+    wp_register_style('opensans','https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
     //bootstrap css
     wp_register_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
     //bootstrap + dépendance js
@@ -52,6 +56,8 @@ function foodog_register_assets()
     wp_deregister_script('jquery');
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.5.1.slim.min.js', [], false, true);
     //on ajout à la queue de chargement des scripts
+    wp_enqueue_style('crimson');
+    wp_enqueue_style('opensans');
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
     wp_enqueue_style('style', get_stylesheet_uri());
