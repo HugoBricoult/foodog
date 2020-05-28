@@ -24,9 +24,19 @@ We need to install Wordpress, WAMP/MAMP/XAMP for the database and VSCODE or PHPS
 ## Difficulties encountered
 
 ### Hugo's difficulties :
-*  -Learn the structure of Wordpress and how it works
-*  -Understand how a theme works
+*  Learn the structure of Wordpress and how it works
+*  Understand how a theme works
 
 ### Tiago's difficulties :
 
 *  Mainly the images of the articles at the bottom of the single page, to ensure that they are all the same size without distorting the image of the article (since the user can put images of different sizes)
+
+### Amaury's difficulties :
+
+*  Become familiar with Wordpress (which is not easy at first)
+*  Include css with bootstrap and wordpress menus
+*  Understand how widgets work and how to modify them
+
+### Kevin's difficulties :
+
+* 
