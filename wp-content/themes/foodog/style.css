@@ -1155,14 +1155,14 @@ h2, h3, h4 {
 
 .foodog-related-posts .foodog-related-individual {
   display: inline-block;
-  max-width: 200px;
+  max-width: 171px;
   height: 350px;
   vertical-align: middle;
 }
 
 .foodog-related-posts .foodog-related-individual .foodog-post-related-img {
-  width: 200px;
-  height: 200px;
+  width: 171px;
+  height: 171px;
   margin: 20px 9px 0 0;
 }
 
