@@ -31,8 +31,11 @@ if (have_posts()) { ?>
         <?php while (have_posts()) {
             the_post(); ?>
             <div class="text-center">
-                <?php the_content() ?>
+                <?php the_post_thumbnail() ?>
             <h5><?php the_title() ?> - <?php the_author() ?></h5>
+            <a href="<?php the_permalink() ?>">Contenu</a><br>
+            <br>
+            <br>
             </div>
             
         <?php } ?>
