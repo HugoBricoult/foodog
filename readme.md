@@ -6,7 +6,7 @@ Project Foodog using Wordpress to built it.
 
 ## Contributors
 
-**Hugo Bricoult** - **Kevin Pirnay** - **Tiago Rodrigues** - **Deltenre Amaury**
+**Hugo Bricoult** - **Kevin Pirnay** - **Tiago Rodrigues** - **Amaury Deltenre**
 
 ### Prerequisites
 
