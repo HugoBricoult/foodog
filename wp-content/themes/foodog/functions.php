@@ -18,6 +18,8 @@ function foodog_support()
     add_theme_support('menus');
     register_nav_menu('header', 'En tête du menu');
     register_nav_menu('footer', 'Pied de page');
+    register_nav_menu('begin-post', 'Debut Article'); //ajout menu reseaux sociaux debut article
+    register_nav_menu('footer-post', 'Fin Article'); //ajout menu reseaux sociaux fin article
 }
 
 //ajout bootstrap (css et script js (+dépendance popper et jquery))
@@ -34,6 +36,7 @@ function foodog_register_assets()
     //on ajout à la queue de chargement des scripts
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
+    wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
 
 //changer le séparateur du titre du site (voir titre onglet)
@@ -86,6 +89,51 @@ function foodog_pagination()
     echo '</ul>';
 }
 
+/* fonction pour changer placeholder des inputs formulaire */
+function my_update_comment_fields( $fields ) {
+
+	$commenter = wp_get_current_commenter();
+	$req       = get_option( 'require_name_email' );
+	$label     = $req ? '*' : ' ' . __( '(optional)', 'text-domain' );
+	$aria_req  = $req ? "aria-required='true'" : '';
+
+	$fields['author'] =
+		'<p class="comment-form-author">
+			<label for="author">' . __( "Name", "text-domain" ) . $label . '</label>
+			<input id="author" name="author" type="text" placeholder="' . esc_attr__( "Name...", "text-domain" ) . '" value="' . esc_attr( $commenter['comment_author'] ) .
+		'" size="30" ' . $aria_req . ' />
+		</p>';
+
+	$fields['email'] =
+		'<p class="comment-form-email">
+			<label for="email">' . __( "Email", "text-domain" ) . $label . '</label>
+			<input id="email" name="email" type="email" placeholder="' . esc_attr__( "Email...", "text-domain" ) . '" value="' . esc_attr( $commenter['comment_author_email'] ) .
+		'" size="30" ' . $aria_req . ' />
+		</p>';
+
+	$fields['url'] =
+		'<p class="comment-form-url">
+			<label for="url">' . __( "Website", "text-domain" ) . '</label>
+			<input id="url" name="url" type="url"  placeholder="' . esc_attr__( "Website...", "text-domain" ) . '" value="' . esc_attr( $commenter['comment_author_url'] ) .
+		'" size="30" />
+			</p>';
+
+	return $fields;
+}
+
+/* fonction pour changer placeholder textarea formulaire */
+function my_update_comment_field( $comment_field ) {
+
+    $comment_field =
+      '<p class="comment-form-comment">
+              <label for="comment">' . __( "Comment", "text-domain" ) . '</label>
+              <textarea required id="comment" name="comment" placeholder="' . esc_attr__( "Write your comment here...", "text-domain" ) . '" cols="45" rows="8" aria-required="true"></textarea>
+          </p>';
+  
+    return $comment_field;
+  }
+  
+
 
 //add_action=>
 //1er paramètre : évenement
@@ -102,3 +150,5 @@ add_action('wp_enqueue_scripts', 'foodog_register_assets');
 add_filter('document_title_parts', 'foodog_document_title_parts'); */
 add_filter('nav_menu_css_class', 'foodog_menu_class');
 add_filter('nav_menu_link_attributes', 'foodog_menu_link_class');
+add_filter( 'comment_form_default_fields', 'my_update_comment_fields' ); //filter fonction input formulaire
+add_filter( 'comment_form_field_comment', 'my_update_comment_field' ); //filter fonction textarea formulaire

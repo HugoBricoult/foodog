@@ -8,6 +8,448 @@ Version: 0.1
 }
 
 .foodog-menu .foodog-menu-link {
+  color: white;
+  /* change */
+  text-decoration: none;
+}
+
+.foodog-menu .foodog-menu-link i {
+  margin-right: 5px;
+  /* change */
+}
+
+/* --------- */
+.post.content {
+  width: 80%;
+}
+
+.foodog-page-title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 50px 0;
+}
+
+.foodog-page-title a {
+  color: #4B4F54;
+}
+
+.foodog-page-title a:hover {
+  text-decoration: none;
+}
+
+.foodog-post-thumbnails {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.foodog-social-middle-bar {
+  width: 100%;
+  height: 50px;
+  margin: 40px 0 40px 0;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.foodog-social-middle-bar p {
+  color: #b4b4b4;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.foodog-social-middle-bar p img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.foodog-social-middle-bar p .author-name-post {
+  text-transform: uppercase;
+}
+
+.foodog-post-social-begin {
+  text-align: center;
+  display: inline-block;
+}
+
+.foodog-post-social-begin span {
+  text-transform: uppercase;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.foodog-post-social-begin ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+.foodog-post-social-begin ul li {
+  width: 30px;
+  padding: 4px 6px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.foodog-post-social-begin ul li .foodog-menu-link i {
+  margin: 0;
+}
+
+.foodog-post-social-begin ul .comment {
+  background-color: black;
+  width: 120px;
+  border-radius: 5px;
+}
+
+.foodog-post-social-begin ul .comment:hover {
+  background-color: #464646;
+}
+
+.foodog-post-social-begin ul .comment .foodog-menu-link i {
+  margin-right: 10px;
+}
+
+.foodog-post-social-begin ul .facebook {
+  background-color: #4267B2;
+}
+
+.foodog-post-social-begin ul .facebook:hover {
+  background-color: #6785c0;
+}
+
+.foodog-post-social-begin ul .twitter {
+  background-color: #1DA1F2;
+}
+
+.foodog-post-social-begin ul .twitter:hover {
+  background-color: #4eb6f7;
+}
+
+.foodog-post-social-begin ul .pinterest {
+  background-color: #BD081C;
+}
+
+.foodog-post-social-begin ul .pinterest:hover {
+  background-color: #c23747;
+}
+
+.foodog-post-social-begin ul .google {
+  background-color: black;
+}
+
+/* Reseaux Sociaux Fin Article */
+.foodog-post-social-end {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.foodog-post-social-end p {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.foodog-post-social-end ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+.foodog-post-social-end ul li {
+  width: 110px;
+  padding: 6px 8px;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.foodog-post-social-end ul .comment {
+  background-color: black;
+}
+
+.foodog-post-social-end ul .comment:hover {
+  background-color: #464646;
+}
+
+.foodog-post-social-end ul .facebook {
+  background-color: #4267B2;
+}
+
+.foodog-post-social-end ul .facebook:hover {
+  background-color: #6785c0;
+}
+
+.foodog-post-social-end ul .twitter {
+  background-color: #1DA1F2;
+}
+
+.foodog-post-social-end ul .twitter:hover {
+  background-color: #4eb6f7;
+}
+
+.foodog-post-social-end ul .pinterest {
+  background-color: #BD081C;
+}
+
+.foodog-post-social-end ul .pinterest:hover {
+  background-color: #c23747;
+}
+
+.foodog-post-social-end ul .google {
+  background-color: black;
+}
+
+/* Newsletter */
+.foodog-newsletter-single {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.foodog-newsletter-single h3 {
+  font-size: 35px;
+  margin: 30px 0 30px 0;
+}
+
+.foodog-newsletter-single p {
+  margin: 30px 0 30px 0;
+}
+
+.foodog-newsletter-single input {
+  padding: 8px 40px 10px 10px;
+}
+
+.foodog-newsletter-single .foodog-newsletter-btn {
+  text-transform: uppercase;
+  color: white;
+  background-color: #FF8C70;
+  border: none;
+  padding: 8px 40px 10px 40px;
+  border: 2px solid #FF8C70;
+  font-weight: bold;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.foodog-newsletter-single .foodog-newsletter-btn:hover {
+  background-color: white;
+  color: #FF8C70;
+}
+
+/* Previous Posts */
+.foodog-previous-post {
+  margin: 10px 0 0 0;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  height: 150px;
+}
+
+.foodog-previous-post .row {
+  margin-top: 20px;
+}
+
+.foodog-previous-post .row .column {
+  float: left;
+  padding: 10px;
+  height: 150px;
+}
+
+.foodog-previous-post .row .left {
+  width: 49%;
+  padding: 0 0 0 20px;
+}
+
+.foodog-previous-post .row .left .foodog-previous-link-p {
+  margin: 0 0 30px 0;
+}
+
+.foodog-previous-post .row .left .foodog-previous-link-a {
+  color: #ADADAD;
+  text-transform: uppercase;
+}
+
+.foodog-previous-post .row .left .foodog-previous-title-a {
   color: black;
+  text-transform: uppercase;
+}
+
+.foodog-previous-post .row .vl {
+  border-left: 1px solid #cccccc;
+  height: 100px;
+}
+
+.foodog-previous-post .row .right {
+  width: 49%;
+}
+
+@media (max-width: 1200px) {
+  .foodog-previous-post {
+    height: auto;
+  }
+  .foodog-previous-post .row .left .foodog-previous-title-a {
+    font-size: 14px;
+  }
+}
+
+/* Author Bio (description) */
+.foodog-author-bio-single {
+  margin: 50px 0 50px 0;
+}
+
+.foodog-author-bio-single img {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  float: left;
+}
+
+.foodog-author-bio-single h5 {
+  display: inline-block;
+  margin-left: 5%;
+  font-weight: bold;
+}
+
+.foodog-author-bio-single p {
+  margin-left: 25%;
+}
+
+/* Related Posts */
+.foodog-related-posts {
+  margin-top: 40px;
+}
+
+.foodog-related-posts .related-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.foodog-related-posts .related-title::after {
+  content: "";
+  width: 62%;
+  height: 4px;
+  background: #eeeeee;
+  position: absolute;
+  margin-left: 15px;
+  top: 50%;
+}
+
+.foodog-related-posts .foodog-related-individual {
+  display: inline-block;
+  max-width: 200px;
+  height: 350px;
+  vertical-align: middle;
+}
+
+.foodog-related-posts .foodog-related-individual .foodog-post-related-img {
+  width: 200px;
+  height: 200px;
+  margin: 20px 9px 0 0;
+}
+
+.foodog-related-posts .foodog-related-individual .related-post-title {
+  color: black;
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .foodog-related-posts .foodog-related-individual {
+    display: block;
+    width: 400px;
+    height: auto;
+  }
+  .foodog-related-posts .foodog-related-individual .foodog-post-related-img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* Comments Form */
+#commentform label {
+  display: none;
+}
+
+#commentform .comment-notes {
+  display: none;
+}
+
+#commentform .comment-form-comment {
+  margin: 0;
+}
+
+#commentform .comment-form-comment textarea {
+  width: 100%;
+  margin-top: 30px;
+  border: 2px solid #eeeeee;
+  padding: 15px;
+}
+
+#commentform .comment-form-comment textarea:focus {
+  background-color: #e0e0e0;
+  border: 2px solid #6dbef5;
+}
+
+#commentform .comment-form-author, #commentform .comment-form-email, #commentform .comment-form-url {
+  width: 32.5%;
+  margin: 0 2px 0 0;
+  display: inline-block;
+}
+
+#commentform .comment-form-author input, #commentform .comment-form-email input, #commentform .comment-form-url input {
+  width: 100%;
+  padding: 8px 15px;
+  display: inline-block;
+  border: 2px solid #eeeeee;
+  margin-top: 20px;
+}
+
+#commentform .comment-form-author input:focus, #commentform .comment-form-email input:focus, #commentform .comment-form-url input:focus {
+  background-color: #e0e0e0;
+  border: 2px solid #6dbef5;
+}
+
+#commentform .comment-form-cookies-consent {
+  display: none;
+}
+
+#commentform .form-submit {
+  margin-bottom: 150px;
+}
+
+#commentform .form-submit #submit {
+  color: white;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background-color: black;
+  border: 2px solid black;
+  margin-top: 30px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#commentform .form-submit #submit:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+
+@media (max-width: 1200px) {
+  #commentform .comment-form-author, #commentform .comment-form-email, #commentform .comment-form-url {
+    width: 100%;
+  }
+  #commentform .comment-form-author input, #commentform .comment-form-email input, #commentform .comment-form-url input {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
