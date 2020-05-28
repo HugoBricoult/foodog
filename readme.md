@@ -24,4 +24,4 @@ We need to install Wordpress, WAMP/MAMP/XAMP for the database and VSCODE or PHPS
 ## Difficulties encountered
 
 * Hugo's difficulties :
-** test
+*  test
