@@ -4,9 +4,11 @@
 // - SUPPORTS
 // - REGISTER CSS/JS
 // - MENU
+// - WIDGET
 // - PAGINATION
 // - EXERPTS (résumé contenu)
 // - METADONEES (nombre de vues)
+// - PLACEHOLDER SINGLE-PAGE FORM
 // - ACTIONS
 // - FILTER
 
@@ -35,6 +37,8 @@ function foodog_support()
     register_nav_menu('header', 'En tête du menu');
     register_nav_menu('footer', 'Pied de page');
     register_nav_menu('reseaux', 'Menu En tête reseaux');
+    register_nav_menu('begin-post', 'Debut Article'); //ajout menu reseaux sociaux debut article
+    register_nav_menu('footer-post', 'Fin Article'); //ajout menu reseaux sociaux fin article
 }
 
 
@@ -81,6 +85,30 @@ function foodog_menu_link_class($attrs)
     $attrs['class'] = $foodog_menu_link_class;
     return $attrs;
 }
+
+
+
+//WIDGET///////////////////////////////
+function foodog_widgets_init()
+{
+    register_sidebar(array(
+        'name'          => 'Catégorie menu footer',
+        'id'            => 'first_footer',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ));
+    register_sidebar(array(
+        'name'          => 'Gallerie footer',
+        'id'            => 'third_footer',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ));
+}
+
 
 
 
@@ -134,11 +162,13 @@ function foodog_set_post_view()
     $count++;
     update_post_meta($post_id, $key, $count);
 }
+
 function foodog_posts_column_views($columns)
 {
     $columns['post_views'] = 'Vues';
     return $columns;
 }
+
 function foodog_posts_custom_column_views($column)
 {
     if ($column === 'post_views') {
@@ -146,6 +176,51 @@ function foodog_posts_custom_column_views($column)
     }
 }
 
+
+
+//PLACEHOLDER SINGLE-PAGE FORM/////////////////////////////////
+function my_update_comment_fields( $fields ) {
+
+	$commenter = wp_get_current_commenter();
+	$req       = get_option( 'require_name_email' );
+	$label     = $req ? '*' : ' ' . __( '(optional)', 'text-domain' );
+	$aria_req  = $req ? "aria-required='true'" : '';
+
+	$fields['author'] =
+		'<p class="comment-form-author">
+			<label for="author">' . __( "Name", "text-domain" ) . $label . '</label>
+			<input id="author" name="author" type="text" placeholder="' . esc_attr__( "Name...", "text-domain" ) . '" value="' . esc_attr( $commenter['comment_author'] ) .
+		'" size="30" ' . $aria_req . ' />
+		</p>';
+
+	$fields['email'] =
+		'<p class="comment-form-email">
+			<label for="email">' . __( "Email", "text-domain" ) . $label . '</label>
+			<input id="email" name="email" type="email" placeholder="' . esc_attr__( "Email...", "text-domain" ) . '" value="' . esc_attr( $commenter['comment_author_email'] ) .
+		'" size="30" ' . $aria_req . ' />
+		</p>';
+
+	$fields['url'] =
+		'<p class="comment-form-url">
+			<label for="url">' . __( "Website", "text-domain" ) . '</label>
+			<input id="url" name="url" type="url"  placeholder="' . esc_attr__( "Website...", "text-domain" ) . '" value="' . esc_attr( $commenter['comment_author_url'] ) .
+		'" size="30" />
+			</p>';
+
+	return $fields;
+}
+
+/* fonction pour changer placeholder textarea formulaire */
+function my_update_comment_field( $comment_field ) {
+
+    $comment_field =
+      '<p class="comment-form-comment">
+              <label for="comment">' . __( "Comment", "text-domain" ) . '</label>
+              <textarea required id="comment" name="comment" placeholder="' . esc_attr__( "Write your comment here...", "text-domain" ) . '" cols="45" rows="8" aria-required="true"></textarea>
+          </p>';
+  
+    return $comment_field;
+  }
 
 
 //ACTIONS///////////////////////////////
@@ -156,7 +231,7 @@ function foodog_posts_custom_column_views($column)
 add_action('after_setup_theme', 'foodog_support');
 add_action('wp_enqueue_scripts', 'foodog_register_assets');
 add_action('manage_posts_custom_column', 'foodog_posts_custom_column_views');
-
+add_action('widgets_init', 'foodog_widgets_init');
 
 
 //FILTER///////////////////////////////
@@ -171,3 +246,5 @@ add_filter('nav_menu_link_attributes', 'foodog_menu_link_class');
 add_filter('excerpt_length', 'foodog_custom_excerpt_length', 999);
 add_filter('excerpt_more', 'foodog_excerpt_more');
 add_filter('manage_posts_columns', 'foodog_posts_column_views');
+add_filter( 'comment_form_default_fields', 'my_update_comment_fields' ); //filter fonction input formulaire
+add_filter( 'comment_form_field_comment', 'my_update_comment_field' ); //filter fonction textarea formulaire

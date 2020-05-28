@@ -120,7 +120,7 @@ if (have_posts()) { ?>
         <div class="col-md-4">
 
             <!-- right add -->
-            <?php include('social-single.php') ?>
+            <?php include('social.php') ?>
             <?php include('advertising.php'); ?>
         </div>
     </div>
@@ -135,5 +135,6 @@ if (have_posts()) { ?>
     <h1>Pas d'articles</h1>
 
 <?php } ?>
-
+    </div>
+<?php include('footer-basic.php') ?>
 <?php get_footer() ?>
