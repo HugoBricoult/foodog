@@ -628,10 +628,10 @@ h2, h3, h4{
     text-transform: uppercase;
     margin: 0 0 50px 0;
     a{
-      color: #4B4F54;
-      &:hover{
-        text-decoration: none;
-      }
+        color: #4B4F54;
+        &:hover{
+            text-decoration: none;
+        }
     }
 }
 .foodog-post-thumbnails{
@@ -651,96 +651,93 @@ h2, h3, h4{
         line-height: 50px;
         display: inline-block;
         img{
-          border-radius: 50%;
-          margin-right: 20px;
-          width: 40px;
-          height: 40px;
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 40px;
+            height: 40px;
         }
         .author-name-post{
-          text-transform: uppercase;
+            text-transform: uppercase;
         }
     }
 }
 
 .foodog-post-social-begin{
-  text-align: center;
-  display: inline-block;
- 
-  span{
-      
-      text-transform: uppercase;
-      margin-right: 20px;
-      font-weight: bold;
-      
-  }
-  ul{
-      list-style-type:none;
-      padding: 0;
-      display: inline-block;
-      li{
-          width: 30px;
-          padding: 4px 6px;
-          display: inline-block;
-          border-radius: 50%;
-          margin-right: 20px;
-          font-size: 14px;
-          .foodog-menu-link{
-            i{
-              margin: 0;
+    text-align: center;
+    display: inline-block;
+    span{ 
+        text-transform: uppercase;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+    ul{
+        list-style-type:none;
+        padding: 0;
+        display: inline-block;
+        li{
+            width: 30px;
+            padding: 4px 6px;
+            display: inline-block;
+            border-radius: 50%;
+            margin-right: 20px;
+            font-size: 14px;
+            .foodog-menu-link{
+                i{
+                    margin: 0;
+                }
             }
-          }
-      }
-      .comment{
-        background-color: black;
-        width: 120px;
-        border-radius: 5px;
-        a{
-            color: white;
-            text-decoration: none;
         }
-        &:hover{
-          background-color: rgb(70, 70, 70);
-        }
-        .foodog-menu-link{
-          i{
-            margin-right: 10px;
-          }
-        }
-      }
-      .facebook{
-          background-color: #4267B2;
-          a{
-            color: white;
-            text-decoration: none;
-        }
-          &:hover{
-            background-color: rgb(103, 133, 192);
-          }
-      }
-      .twitter{
-          background-color: #1DA1F2;
-          a{
-            color: white;
-            text-decoration: none;
-        }
-          &:hover{
-            background-color: rgb(78, 182, 247);
-          }
-      }
-      .pinterest{
-          background-color: #BD081C;
-          a{
-            color: white;
-            text-decoration: none;
+        .comment{
+            background-color: black;
+            width: 120px;
+            border-radius: 5px;
+            a{
+                color: white;
+                text-decoration: none;
             }
-          &:hover{
-            background-color: rgb(194, 55, 71);
-          }
-      }
-      .google{
-          background-color: black;
-      }
-  }
+            &:hover{
+                background-color: rgb(70, 70, 70);
+            }
+            .foodog-menu-link{
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .facebook{
+            background-color: #4267B2;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            &:hover{
+                background-color: rgb(103, 133, 192);
+            }
+        }
+        .twitter{
+            background-color: #1DA1F2;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            &:hover{
+                background-color: rgb(78, 182, 247);
+            }
+        }
+        .pinterest{
+            background-color: #BD081C;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            &:hover{
+                background-color: rgb(194, 55, 71);
+            }
+        }
+        .google{
+            background-color: black;
+        }
+    }
 }
 
 
@@ -840,8 +837,8 @@ h2, h3, h4{
         font-weight: bold;
         transition: all 0.3s linear;
         &:hover{
-          background-color: white;
-          color: #FF8C70;
+            background-color: white;
+            color: #FF8C70;
         }
     }
 }
@@ -858,8 +855,8 @@ h2, h3, h4{
             float: left;
             padding: 10px;
             height: 150px; 
-          }
-          .left {
+        }
+        .left {
             width: 49%;
             padding: 0 0 0 20px;
             .foodog-previous-link-p{
@@ -873,28 +870,28 @@ h2, h3, h4{
                 color: black;
                 text-transform: uppercase;
             }
-          }
-          .vl {
+        }
+        .vl {
             border-left: 1px solid rgb(204, 204, 204);
             height: 100px;
-          }
-          .right {
+        }
+        .right {
             width: 49%;
-          }
+        }
     }
 }
 
 @media (max-width:1200px){
-  .foodog-previous-post{
-    height: auto;
-    .row{
-      .left {
-        .foodog-previous-title-a{
-        font-size: 14px;
+    .foodog-previous-post{
+        height: auto;
+        .row{
+            .left {
+                .foodog-previous-title-a{
+                    font-size: 14px;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 /* Author Bio (description) */
@@ -919,13 +916,13 @@ h2, h3, h4{
 /* Related Posts */
 .foodog-related-posts{
     margin-top: 40px;
-      .related-title{
+    .related-title{
         font-size: 20px;
         font-weight: bold;
         text-transform: uppercase;
         position: relative;
-      }
-      .related-title::after{
+    }
+    .related-title::after{
         content: "";
         width: 62%;
         height: 4px;
@@ -933,108 +930,106 @@ h2, h3, h4{
         position: absolute;
         margin-left: 15px;
         top: 50%;
-        
-      }
-      .foodog-related-individual{
-          display: inline-block;
-          max-width: 171px;
-          height: 350px;
-          vertical-align: middle;
-    
+    }
+    .foodog-related-individual{
+        display: inline-block;
+        max-width: 171px;
+        height: 350px;
+        vertical-align: middle;
         .foodog-post-related-img{
             width: 171px;
             height: 171px;
             margin: 20px 9px 0 0;
         }
         .related-post-title{
-          color: black;
-          text-transform: uppercase;
-          margin-top: 15px;
-          font-weight: bold;
+            color: black;
+            text-transform: uppercase;
+            margin-top: 15px;
+            font-weight: bold;
         }
-      }
+    }
 }
 
 @media   (max-width: 1200px) {
-  .foodog-related-posts{
-    .foodog-related-individual{
-      display: block;
-      width: 400px;
-      height: auto;
-      .foodog-post-related-img{
+    .foodog-related-posts{
+        .foodog-related-individual{
+        display: block;
         width: 400px;
-        height: 400px;
-      }
+        height: auto;
+            .foodog-post-related-img{
+                width: 400px;
+                height: 400px;
+            }
+        }
     }
-  }
 }
 
 /* Comments Form */
 #commentform{
-  label{
-    display: none;
-  }
-  .comment-notes{
-    display: none;
-  }
-  .comment-form-comment{ 
-      margin: 0;
-      textarea{
-        width: 100%;
-        margin-top: 30px;
-        border: 2px solid rgb(238, 238, 238);
-        padding: 15px;
-          &:focus{
-            background-color: rgb(224, 224, 224);
-            border: 2px solid rgb(109, 190, 245);
-          }
-      }
-  }
-  .comment-form-author, .comment-form-email, .comment-form-url{
-      width: 32%;
-      margin: 0 2px 0 0;
-      display: inline-block;
-        input{
-          width: 100%;
-          padding: 8px 15px;
-          display: inline-block;
-          border: 2px solid rgb(238, 238, 238);
-          margin-top: 20px;
+    label{
+        display: none;
+    }
+    .comment-notes{
+        display: none;
+    }
+    .comment-form-comment{ 
+        margin: 0;
+        textarea{
+            width: 100%;
+            margin-top: 30px;
+            border: 2px solid rgb(238, 238, 238);
+            padding: 15px;
             &:focus{
-              background-color: rgb(224, 224, 224);
-              border: 2px solid rgb(109, 190, 245);
+                background-color: rgb(224, 224, 224);
+                border: 2px solid rgb(109, 190, 245);
             }
         }
-  }
-  .comment-form-cookies-consent{
-    display: none;
-  }
-  .form-submit{
-    margin-bottom: 150px;
-    #submit{
-      color: white;
-      padding: 10px 20px;
-      text-transform: uppercase;
-      background-color: black;
-      border: 2px solid black;
-      margin-top: 30px;
-      transition: all 0.3s linear;
-      &:hover{
-        color: black;
-        background-color: white;
-        border: 2px solid black;
-      }
     }
-  }
+    .comment-form-author, .comment-form-email, .comment-form-url{
+        width: 32%;
+        margin: 0 2px 0 0;
+        display: inline-block;
+        input{
+            width: 100%;
+            padding: 8px 15px;
+            display: inline-block;
+            border: 2px solid rgb(238, 238, 238);
+            margin-top: 20px;
+            &:focus{
+                background-color: rgb(224, 224, 224);
+                border: 2px solid rgb(109, 190, 245);
+            }
+        }
+    }
+    .comment-form-cookies-consent{
+        display: none;
+    }
+    .form-submit{
+        margin-bottom: 150px;
+        #submit{
+            color: white;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            background-color: black;
+            border: 2px solid black;
+            margin-top: 30px;
+            transition: all 0.3s linear;
+            &:hover{
+                color: black;
+                background-color: white;
+                border: 2px solid black;
+            }
+        }
+    }
 }
 
 @media (max-width: 1200px) {
-  #commentform{
-    .comment-form-author, .comment-form-email, .comment-form-url{
-      width: 100%;
-        input{
-          width: 100%;
+    #commentform{
+        .comment-form-author, .comment-form-email, .comment-form-url{
+            width: 100%;
+            input{
+                width: 100%;
+            }
         }
     }
-  }
 }
