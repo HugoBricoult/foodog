@@ -19,3 +19,9 @@ We need to install Wordpress, WAMP/MAMP/XAMP for the database and VSCODE or PHPS
 ## Contributors
 
 **Hugo Bricoult** - **Kevin Pirnay** - **Tiago Rodriges** - **Deltenre Amaury**
+
+
+## Difficulties encountered
+
+* Hugo's difficulties :
+** test
