@@ -4,6 +4,7 @@ include 'navbar.php';
 require 'toolFunction.php';
 
 
+var_dump(get_media_items());
 
 global $wp;
 $category = home_url( $wp->request );

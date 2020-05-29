@@ -1,5 +1,7 @@
 
-<?php get_header() ?>
+<?php get_header() ;
+?>
+
 <?php include('navbar.php'); ?>
     <div class="container foodog-body">
 <?php

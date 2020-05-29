@@ -21,6 +21,9 @@ Version: 0.1
   .foodog-footer-row div {
     width: 90%;
   }
+  .foodog-footer-third {
+    margin-left: 100px;
+  }
 }
 
 body {
@@ -697,13 +700,24 @@ h2, h3, h4 {
 }
 
 .foodog-footer-third {
-  padding-right: 15px;
-  padding-top: 25px;
+  padding-left: auto;
+  padding-right: 50px;
+  max-width: 550px;
+}
+
+.foodog-footer-third h2 {
+  text-align: center;
 }
 
 .foodog-footer-third img {
   width: 90%;
-  height: auto;
+  height: 90%;
+}
+
+.foodog-footer-third .row div {
+  width: 100px;
+  height: 100px;
+  padding: 0;
 }
 
 .foodog-footer-first {
