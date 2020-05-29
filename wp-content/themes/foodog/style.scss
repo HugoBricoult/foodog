@@ -130,8 +130,10 @@ h2, h3, h4{
     font-size: 20px;
     border-radius: 2px;
     text-decoration: none;
+    
     i{
         transform: translate(4px, -1px);
+        line-height: 1.5;
     }
     &:hover{
         color: white;
@@ -524,6 +526,7 @@ h2, h3, h4{
         margin-left: 5px;
         i{
             transform: translateY(5px);
+            line-height: 1.5;
         }
     }
 }  
@@ -1032,4 +1035,45 @@ h2, h3, h4{
             }
         }
     }
+}
+
+/*Category kevin */
+.foodog-card-category-title{
+    display: flex;
+    flex-direction: row;
+    span{
+        transform: translateY(-5px);
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: start;
+        li{
+            list-style-type: none;
+            padding:0 ;
+            padding-right: 10px;
+            a{
+                text-decoration: none;
+                color: #ff9473;
+                font-weight: bold;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.foodog-category-btn-share-image{
+    
+        background-color: white;
+        border: none;
+        width: 90px;
+        padding: 0;
+        text-align: start;
+        i{
+            border: 1px solid gray;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    
 }

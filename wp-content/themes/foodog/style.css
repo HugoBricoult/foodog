@@ -153,6 +153,7 @@ h2, h3, h4 {
 .foodog-btn-top i {
   -webkit-transform: translate(4px, -1px);
           transform: translate(4px, -1px);
+  line-height: 1.5;
 }
 
 .foodog-btn-top:hover {
@@ -678,6 +679,7 @@ h2, h3, h4 {
 .foodog-footericon a i {
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
+  line-height: 1.5;
 }
 
 .foodog-footer-fourth {
@@ -1261,5 +1263,62 @@ h2, h3, h4 {
   #commentform .comment-form-author input, #commentform .comment-form-email input, #commentform .comment-form-url input {
     width: 100%;
   }
+}
+
+/*Category kevin */
+.foodog-card-category-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.foodog-card-category-title span {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.foodog-card-category-title ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.foodog-card-category-title ul li {
+  list-style-type: none;
+  padding: 0;
+  padding-right: 10px;
+}
+
+.foodog-card-category-title ul li a {
+  text-decoration: none;
+  color: #ff9473;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.foodog-category-btn-share-image {
+  background-color: white;
+  border: none;
+  width: 90px;
+  padding: 0;
+  text-align: start;
+}
+
+.foodog-category-btn-share-image i {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 5px;
 }
 /*# sourceMappingURL=style.css.map */
