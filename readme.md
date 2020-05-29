@@ -48,4 +48,4 @@ The theme was created from scratch. The theme adds the possibility of managing m
 There is also a form and a user-customizable menus.
 
 ## Demo Website
-(Foodog)[https://foodog-becode.000webhostapp.com/]
+[Foodog](https://foodog-becode.000webhostapp.com/)
