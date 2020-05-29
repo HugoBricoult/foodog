@@ -32,7 +32,7 @@ if (have_posts()) { ?>
 
         <!-- First Firsts 5 tiles -->
         <?php the_post() ?>
-        <div class="col-md-6 foodog-home-first-card">
+        <div class="col-md-6 foodog-home-first-card ">
             <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="<?php the_post_thumbnail_caption() ?>"></a>
             <?php the_category() ?>
             <h2><?php the_title() ?></h2>
@@ -81,7 +81,7 @@ if (have_posts()) { ?>
             <?php for ($i = 0; $i < sizeof($postsmostviewed); $i++) { ?>
 
 
-                <div class="foodog-home-featured-card">
+                <div class="foodog-home-featured-card" data-aos="zoom-out">
                     <a href="<?= get_the_permalink($postsmostviewed[$i]->ID) ?>"><img src="<?= get_the_post_thumbnail_url($postsmostviewed[$i]->ID) ?>" alt="<?php the_post_thumbnail_caption() ?>"></a>
                     <div class="foodog-home-featured-card-desc">
                         <?= get_the_category_list('', '', $postsmostviewed[$i]->ID) ?>
@@ -107,7 +107,7 @@ if (have_posts()) { ?>
                 <?php for ($i = 0; $i < 6; $i++) {
                     if (have_posts()) {
                         the_post(); ?>
-                        <div class="col-md-6 foodog-home-lastest-card">
+                        <div class="col-md-6 foodog-home-lastest-card" data-aos="zoom-out">
                             <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="<?php the_post_thumbnail_caption() ?>"></a>
                             <?php the_category() ?>
                             <h2><?php the_title() ?></h2>

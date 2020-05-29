@@ -47,12 +47,16 @@ function foodog_support()
 //ajout bootstrap (css et script js (+dépendance popper et jquery))
 function foodog_register_assets()
 {
+    //Aos animation
+    wp_register_style('aos','https://unpkg.com/aos@2.3.1/dist/aos.css');
     //crimson text
     wp_register_style('crimson','https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
     //open sans
     wp_register_style('opensans','https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
     //bootstrap css
     wp_register_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css');
+    //Aos script
+    wp_register_script('aos','https://unpkg.com/aos@2.3.1/dist/aos.js', [], false, true);
     //bootstrap + dépendance js
     wp_register_script('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js', ['popper', 'jquery'], false, true);
     wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', [], false, true);
@@ -60,9 +64,11 @@ function foodog_register_assets()
     wp_deregister_script('jquery');
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.5.1.slim.min.js', [], false, true);
     //on ajout à la queue de chargement des scripts
+    wp_enqueue_style('aos');
     wp_enqueue_style('crimson');
     wp_enqueue_style('opensans');
     wp_enqueue_style('bootstrap');
+    wp_enqueue_script('aos');
     wp_enqueue_script('bootstrap');
     wp_enqueue_style('style', get_stylesheet_uri());
 }

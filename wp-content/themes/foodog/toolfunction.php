@@ -2,7 +2,7 @@
 
 function card_cat()
 { ?>
-    <div class="col-12">
+    <div class="col-12" data-aos="zoom-out">
        <div class="card border-left-0 border-right-0 border-top-0 rounded-0">
             <div class="row no-gutters">
                 <div class="col-lg-6 col-md-12 d-flex ">
