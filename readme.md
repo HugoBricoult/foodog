@@ -46,3 +46,6 @@ We need to install Wordpress, WAMP/MAMP/XAMP for the database and VSCODE or PHPS
 The theme was created from scratch. The theme adds the possibility of managing menus and widgets. It also adds the number of views per article (It also sorts the display of articles according to the views). 
 
 There is also a form and a user-customizable menus.
+
+## Demo Website
+(Foodog)[https://foodog-becode.000webhostapp.com/]
