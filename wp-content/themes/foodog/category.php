@@ -1,9 +1,9 @@
 <?php
-
-require 'navbar.php';
+get_header();
+include 'navbar.php';
 require 'toolFunction.php';
 
-get_header();
+
 
 global $wp;
 $category = home_url( $wp->request );

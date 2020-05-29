@@ -14,7 +14,7 @@ function card_cat()
                     <div class="card-body pl-0 pr-0">
                         <div class="foodog-card-category-title"><div class="card-subtitle"><?php the_category() ?></div><span class="span-border"> |</span></div>
                         <h5 class="card-title text-uppercase font-weight-bold"><?php the_title() ?></h5>
-                        <p class="card-text"><?php the_excerpt() ?></p>
+                        <?php the_excerpt() ?>
                         <button class="foodog-category-btn-share-image"><i class="fas fa-share"></i> Share</button>
                     </div>
                 </div>

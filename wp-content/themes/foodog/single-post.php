@@ -10,7 +10,7 @@
                     <h2 class="foodog-page-title"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2><!-- titre de l'article -->
                     
                     <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'post-thumbnails' ); ?><!-- thumbnail de l'article -->
-                    <img class="foodog-post-thumbnails" src="<?php echo $url ?>" />
+                    <img class="foodog-post-thumbnails" src="<?php echo $url ?>" alt="image post"/>
 
                     <div class="foodog-social-middle-bar"><!-- barre reseaux sociaux debut de l'article -->
                         <p><?php echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>by : <span class="author-name-post"><?php the_author();?></span> |	</p>
@@ -44,7 +44,7 @@
                                     $prev_post = get_previous_post();
                                     if ( ! empty( $prev_post ) ): ?>
                                 <a class="foodog-previous-link-a" href="<?php echo get_permalink( $prev_post->ID ); ?>">
-                                    <?php echo "< Previous Article"; ?>
+                                    <?php echo "<p>< Previous Article</p>"; ?>
                                 </a>
                                 <?php endif; ?>
                                 </p>
@@ -152,6 +152,6 @@
 	</div>
 </div>
 <?php endwhile; ?>
-            </div>
+            
 <?php include('footer-single.php') ?>
 <?php get_footer() ?>

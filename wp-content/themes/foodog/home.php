@@ -111,7 +111,7 @@ if (have_posts()) { ?>
                             <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="<?php the_post_thumbnail_caption() ?>"></a>
                             <?php the_category() ?>
                             <h2><?php the_title() ?></h2>
-                            <p><?php the_excerpt() ?></p>
+                            <?php the_excerpt() ?>
                         </div>
                 <?php   }
                 } ?>
