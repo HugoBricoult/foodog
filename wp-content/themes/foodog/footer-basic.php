@@ -29,15 +29,15 @@
         <div class="foodog-footer-third col-md-4 text-center">
         <h2>Popular posts</h2>
             <div class="row">
-                <div class="col-4"><img src="https://hdfondsdecran.com/image/201609/1552/chien-echarpe-regard-teckel.jpg" alt="Chien"></div>
-                <div class="col-4"><img src="https://s1.1zoom.me/b5050/126/Dogs_Cute_Beautiful_Tongue_Retriever_Glance_Head_520706_1920x1080.jpg" alt="Chien"></div>
-                <div class="col-4"><img src="https://www.croquetteland.com/wp/wp-content/uploads/2016/01/pitbull-69416_960_720-397x600.jpg" alt="Chien"></div>
-                <div class="col-4"><img src="https://www.croquetteland.com/wp/wp-content/uploads/2017/10/calculs_urinaire_chien-400x600.jpg" alt="Chien"></div>
-                <div class="col-4"><img src="https://catedog.com/wp-content/uploads/2018/07/bouvier-de-entlebuch-chien-400x600.jpg" alt="Chien"></div>
-                <div class="col-4"><img src="https://www.lafabriquecrepue.com/wp-content/uploads/2018/01/Donati_Florence_25janvier_photo1-400x600.jpg" alt="Chien"></div>
-                <div class="col-4"><img src="https://images.unsplash.com/photo-1499789853431-fcbf274f57b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Chien"></div>
-                <div class="col-4"><img src="https://www.association-sixieme-sens.fr/wp-content/uploads/sites/1639/2017/12/img_0679-400x600.jpg" alt="Chien"></div>
-                <div class="col-4"><img src="https://data.pixiz.com/output/user/frame/preview/400x400/8/9/2/5/3065298_572c1.jpg" alt="Chien"></div>
+                <div class="col-4"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/bc/1c/53/bc1c53cf-60bf-00b6-d1c6-3d0bad221a86/source/256x256bb.jpg" alt="Chien"></div>
+                <div class="col-4"><img src="https://i.pinimg.com/280x280_RS/62/fd/20/62fd2029362a7492ad7f5069c784e3ae.jpg" alt="Chien"></div>
+                <div class="col-4"><img src="https://dogcounty.com/wp-content/uploads/2020/04/dog-eating-grasses.jpg" alt="Chien"></div>
+                <div class="col-4"><img src="https://mishkanasevere.com/wp-content/uploads/2018/07/QuinoaCookies-thegem-post-thumb-large.jpg" alt="Chien"></div>
+                <div class="col-4"><img src="https://cdn.nsarco.com/skin/bop/images/home-page/dog-at-home.jpg" alt="Chien"></div>
+                <div class="col-4"><img src="https://images.pexels.com/users/avatars/230845/alexandru-rotariu-904.jpeg?w=256&h=256&fit=crop&crop=faces&auto=compress" alt="Chien"></div>
+                <div class="col-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTE1CTxyO5XRj1A1tE3Odx9krNhnlnSmmEN3i1VKCvZzz9OQtUk&usqp=CAU" alt="Chien"></div>
+                <div class="col-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVjJUpxF8kr3SwAykN6f700reaxTHCenAGirlG-eCkBpzSdc2b&usqp=CAU" alt="Chien"></div>
+                <div class="col-4"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple91/v4/b6/43/7a/b6437aad-3e1a-bf73-ae09-205a19580ce4/source/256x256bb.jpg" alt="Chien"></div>
             </div>
         </div>
     </div>
